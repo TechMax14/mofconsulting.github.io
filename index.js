@@ -34,7 +34,7 @@ const port = process.env.PORT || "4000";
 /**
  *  App Configuration
  */
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '/')));
 app.use(fileUpload());
 app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 app.use(express.json())
@@ -48,12 +48,13 @@ app.use(bodyParser.urlencoded({
  * Routes Definitions
  */
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
 app.get('/mentoring', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'public', 'mentoring.html'));
+    res.sendFile(path.resolve(__dirname, 'mentoring.html'));
 });
+
 
 /**
  * Server Activation

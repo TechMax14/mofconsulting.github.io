@@ -22,13 +22,14 @@ const db = admin.firestore();
 const app = express();
 app.use(cors());
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "public", "index.html"));
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.get("/mentoring", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "public", "mentoring.html"));
+app.get('/mentoring', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'mentoring.html'));
 });
+
 
 
 // Your API route and logic
