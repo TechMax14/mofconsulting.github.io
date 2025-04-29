@@ -1,8 +1,8 @@
-# tmgcodeconsulting
+# mofcodeconsulting
 
 ## New client infra setup
 1. add project here: https://console.cloud.google.com/home/dashboard
-2. add project here: https://console.firebase.google.com/u/0/project/tmgcodeconsulting/overview
+2. add project here: https://console.firebase.google.com/u/0/project/mofcodeconsulting/overview
 3. choose Web option in project overview
 4. pick same name as project for the app nickname
 5. run the npm command from the firebase console in the root of the project
